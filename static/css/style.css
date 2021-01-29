@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Zilla+Slab:wght@400;500&display=swap');
+
+
+/*----------Default Overrides--------------*/
+a:hover {
+    text-decoration: none;
+}
+
+button:focus{
+    outline: none;
+}
+
+/*------------Margin Overrides-------------*/
+
+/*--------Text Presets--------*/
+.logo-text{
+    font-family: 'IM Fell French Canon SC', serif;
+}
+
+#allauth-content label,
+.heading-text{
+    font-family: 'Zilla Slab', serif;
+}
+
+#allauth-content input,
+.body-text{
+    font-family: 'Lato', sans-serif;
+}
+
+.text-xxl{
+    font-size: 2.5em;
+}
+
+.text-l{
+    font-size: 1.5em;
+}
+
+.text-m {
+    font-size:1em;
+}
+
+.text-s {
+    font-size: 0.75em;
+}
+
+/*------------ Colors ------------*/
+
+colours {
+    color: #da2841;
+    color: #ffffff;
+    color: #28dac1;
+    color: #06231f;
+    color: #ede8e8;
+}
