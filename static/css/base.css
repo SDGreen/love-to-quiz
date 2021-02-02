@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Zilla+Slab:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap&family=Lato&family=Zilla+Slab:wght@400;500&display=swap');
 
 
 /*----------Default Overrides--------------*/
@@ -10,11 +10,15 @@ button:focus{
     outline: none;
 }
 
+.row {
+    margin: 0;
+}
+
 /*------------Margin Overrides-------------*/
 
 /*--------Text Presets--------*/
 .logo-text{
-    font-family: 'IM Fell French Canon SC', serif;
+    font-family: 'Caveat', cursive;
 }
 
 #allauth-content label,
@@ -58,7 +62,43 @@ header {
     background-color: #da2841;
 }
 
+#main-navbar a,
+#main-navbar li {
+    color: #ffffff;
+}
 
 footer {
     background-color: #404245;
+}
+
+/*------ Navbar ------------*/
+
+#search-button{
+    width: 30px;
+}
+
+#small-screen-search {
+    display: none;
+    margin-top: 0;
+}
+
+#small-screen-search .input-group {
+    width: 100%;
+}
+
+/*--------------Media Breakpoints---------*/
+
+@media (max-width: 450px){
+    .navbar-brand{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 990px){
+    #logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
