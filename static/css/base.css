@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap&family=Lato&family=Zilla+Slab:wght@400;500&display=swap');
 
 
-/*----------Default Overrides--------------*/
+/*--- Default Overrides ---*/
 a:hover {
     text-decoration: none;
+}
+
+a {
+    color: initial;
 }
 
 button:focus{
@@ -14,9 +18,9 @@ button:focus{
     margin: 0;
 }
 
-/*------------Margin Overrides-------------*/
+/*--- Margin Overrides ---*/
 
-/*--------Text Presets--------*/
+/*--- Text Presets ---*/
 .logo-text{
     font-family: 'Caveat', cursive;
 }
@@ -47,7 +51,15 @@ button:focus{
     font-size: 0.75em;
 }
 
-/*------------ Colors ------------*/
+/*--- reusuable elements ---*/
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+/*--- Colors ---*/
 
 colours {
     color: #da2841;
@@ -62,16 +74,36 @@ header {
     background-color: #da2841;
 }
 
-#main-navbar a,
-#main-navbar li {
-    color: #ffffff;
+.btn {
+    background-color: #28dac1;
 }
+
+.btn:hover {
+    background-color: #06231f;
+}
+
 
 footer {
     background-color: #404245;
 }
 
-/*------ Navbar ------------*/
+#homepage-background>.wrapper{
+
+    background-color: rgba(237, 232, 232, 0.2);
+}
+
+.btn:hover,
+.button,
+#main-navbar a,
+#main-navbar li {
+    color: #ffffff;
+}
+
+#homepage-brand h1{
+    color: #da2841;
+}
+
+/*--- Navbar ---*/
 
 #search-button{
     width: 30px;
@@ -85,8 +117,39 @@ footer {
 #small-screen-search .input-group {
     width: 100%;
 }
+/*--- Homepage ---*/
 
-/*--------------Media Breakpoints---------*/
+#homepage-background {
+
+    height: 100vh;
+    width: 100%;
+    background: url('/static/home/images/group-quiz.jpg') no-repeat center;
+    background-size: cover;
+
+}
+
+#homepage-brand{
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#homepage-menu {
+    position: absolute;
+    width: 100%;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#homepage-brand h1 {
+    font-size: 4em;
+    font-weight: bolder;
+}
+
+/*--- Media Breakpoints ---*/
 
 @media (max-width: 450px){
     .navbar-brand{
